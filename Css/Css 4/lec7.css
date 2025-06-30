@@ -1,0 +1,18 @@
+#box {
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    background-color: green;
+    margin:10px auto;
+    box-shadow:2px 2px 8px black ;
+}
+div {
+    width: 400px;
+    height: 200px ;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image: url("image.jpg");
+    background-size: cover;
+    color: white;
+    font-size: larger;
+}

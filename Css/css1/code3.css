@@ -1,0 +1,36 @@
+div {
+    height: 200px;
+}
+div {
+    width: 500px;
+    background-color: pink;
+    /*border-left-color: black;*/
+    /*border-right-color: blue;*/
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    /* padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 50px;
+    padding-bottom: 50px; */
+    padding: 50px 50px 50px 80px;
+    margin: 20px 30px 4px;
+}
+h1 {
+    border-color: black;
+    background-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    width: 50%;
+    
+}
+button {
+    border-color: black;
+    
+    border-width: 10px;
+    border-radius: 10px;
+     /* padding-left: 20px;
+     padding-right: 20px; */
+     padding:10px 20px 10px 20px ;
+} 

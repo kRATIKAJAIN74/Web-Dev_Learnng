@@ -12,13 +12,16 @@
     animation-iteration-count: 3;
     animation-direction:normal ; */
 
-    animation: fontAnimation 2s ease-in 0s infinite alternate ;
+    animation: colorAnimate 2s ease-in 0s infinite alternate ;
 }
-@keyframes fontAnimation {
-    from{font-size: 20px;
+@keyframes colorAnimate {
+    0%{
     background-color: yellowgreen;
     }
-    to{font-size: 40px;
+    50%{
+    background-color: pink;
+    }
+    100%{
     background-color: orange;
     border-radius: 20px;
     }

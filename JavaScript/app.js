@@ -1,70 +1,32 @@
-console.log("Hello JavaScript");
+let todo = []
+let req = prompt("please enter your request");
 
-let a = 10;
-let b = 20;
-console.log("sum is : ", a + b);
-
-
-console.log(a+b);
-console.log(a-b);
-console.log(a*b);
-console.log(a%b);
-
-let age = 18;
-console.log(age >= 18);
-
-//Conditional Statements
-let Age = 13;
-if(Age >= 18) {
-    console.log("You can vote.");
+while(true){
+     if(req == "quit"){
+          console.log("quitting app");
+          break;
+     }
+      else if(req == "list") {
+          console.log("-----------------");
+          for(let i=0;i<todo.length;i++){
+               console.log(i, todo[i]);
+          }
+          console.log("-----------------");
+     }
+     else if (req == "add"){
+          let task = prompt("please enter the task you want to add.");
+          todo.push(task);
+          console.log("task added")
+     }
+       
+       else if ( req == "delete"){
+          let idx = prompt("plesse enter the task index");
+          todo.splice(idx, 1);
+          console.log("task deleted");
+     }else {
+          console.log("Invalid request");
+     }
+         
+     
+     let req = prompt("please enter your request");
 }
-else  {
-    console.log("you can't vote.");
-}
-
-//Trafic Light-->
-let color ="yellow";
-if (color=="red"){
-    console.log("Stop!");
-}
-if (color=="yellow"){
-    console.log("Slow Down!");
-}
-if (color=="green"){
-    console.log("Go!");
-}
-
-// Days of the week -->
-let day = 5;
-switch(day){
-case 1:
-console.log("Monday");
-break;
-case 2:
-console.log("Tuesday");
-break;
-case 3:
-console.log("Wednesday");
-break;
-case 4:
-console.log("Thursday");
-break;
-case 5:
-console.log("Friday");
-break;
-case 6:
-console.log("Saturday");
-break;
-case 7:
-console.log("Sundayy");
-default :
-console.log ("Not a day!!")
-
-}
-
-
- 
-//Assignment
- let Name = prompt("Enter your name:");
- let Year = prompt("Enter your age:");
-alert(`${Name} is ${Year} years old.`);

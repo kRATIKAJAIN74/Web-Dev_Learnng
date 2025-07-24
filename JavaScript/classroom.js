@@ -1,7 +1,8 @@
-const Post= {
-    username: "Kratika",
-    content: "This is my #firstpost",
-    likes: 150,
-    repost: 5,
-    tags: ['@apnacollege', '@delta']
-};
+let inp = document.querySelector("#text");
+let p = document.querySelector("p");
+inp.addEventListener("input", function () {
+    console.log(inp.value);
+    p.innerText = inp.value;
+});
+
+ 
